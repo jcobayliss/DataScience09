@@ -16,6 +16,7 @@ shinyServer(
   function(input, output) {
     output$heuristic <- renderPrint({input$heuristic})
     output$p1 <- renderPrint({input$p1})    
+    output$p2 <- renderPrint({input$p2})    
     output$cost <- renderPrint(predictCost(input$heuristic, input$p1, input$p2))
   }
   
